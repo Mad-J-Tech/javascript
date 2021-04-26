@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let tasks = [
+            '掃除',
+            '買い物',
+            '散歩'
+        ]
+
+        console.log(`
+                    =======================
+                     現在持っているタスクの一覧
+                    =======================
+                    `)
+        for (i = 0; i < tasks.length; i++) {
+            console.log(i + ':' + tasks[i]);
+        }
+
+        let task = prompt('タスクを入力してください');
+
+        function addTask() {
+            tasks.push(task);
+            return tasks;
+        }
+
+        while (task !== '終了') {
+            addTask();
+            window.alert('新しいタスクを追加しました。');
+            console.log(`
+                    =======================
+                     現在持っているタスクの一覧
+                    =======================
+                    `)
+            for (i = 0; i < tasks.length; i++) {
+                console.log(i + ':' + tasks[i]);
+            }
+
+            task = prompt('タスクを入力してください');
+        }
+    </script>
+</body>
+
+</html>
