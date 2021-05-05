@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const tasks = new Map([
+            ['掃除', '机を片付ける'],
+            ['買い物', '牛乳を買う'],
+            ['運動', '散歩する']]);
+
+        function showTasks() {
+            console.log(`
+                    =======================
+                     現在持っているタスクの一覧
+                    =======================
+                    `);
+
+            i = 0;
+            for (let [key, value] of tasks) {
+                console.log(i + ':[内容]' + value + '、[ジャンル]' + key);
+                i++;
+            }
+        }
+
+        function addTask() {
+            const taskDetail = prompt('内容を入力してください');
+            const taskGenre = prompt('ジャンルを入力してください');
+            tasks.set(taskGenre, taskDetail);
+            window.alert('新しいタスクを追加しました');
+            return tasks;
+        }
+
+        showTasks();
+
+        let order = prompt('「確認,追加,削除,終了」の4つのいずれかを入力してください');
+
+        while (order !== '終了') {
+            addTask();
+            showTasks();
+            order = prompt('「確認,追加,削除,終了」の4つのいずれかを入力してください');
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
