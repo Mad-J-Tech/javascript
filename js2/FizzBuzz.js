@@ -1,9 +1,6 @@
 function check() {
 
-    /*
-    const fizz = parseInt(document.fizzbuzz.elements[0].value);
-    const buzz = parseInt(document.fizzbuzz.elements[1].value);
-    */
+    document.querySelector('p').remove();
 
     const fizzStr = document.fizzbuzz.elements[0].value;
     const buzzStr = document.fizzbuzz.elements[1].value;
@@ -56,7 +53,5 @@ function check() {
     } else {
         error();
     }
-
-
 
 }
