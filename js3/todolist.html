@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <header>ToDoリスト</header>
+
+    <form action="">
+        <input type="radio" name="status" value="all">全て
+        <input type="radio" name="status" value="progress">作業中
+        <input type="radio" name="status" value="complete">完了
+    </form>
+
+    <table id="table">
+        <tr>
+            <th>ID</th>
+            <th>コメント</th>
+            <th>状態</th>
+            <th></th>
+        </tr>
+    </table>
+
+    <form action="javascript:void(0)">
+        <input type="text" id="comment">
+        <button type="submit" id="btn">追加</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
