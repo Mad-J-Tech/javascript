@@ -83,14 +83,23 @@ function addTask() {
     todos.push(todo);
 }
 
+const delbtns = document.getElementsByClassName('trash');
+
 function deleteTask() {
-    const delbtns = document.getElementsByClassName('trash');
 
     for (i = 0; i < delbtns.length; i++) {
         delbtns[i].addEventListener('click', () => {
             todos.splice(i, 1);
+            console.log(delbtns.length);
+            console.log(i);
         });
     }
 }
+
+btn.addEventListener('click', () => {
+    addTask();
+    showTasks();
+    deleteTask();
+});
 
 
