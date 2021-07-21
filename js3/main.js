@@ -1,16 +1,16 @@
-const table = document.getElementById('table');
+const tbody = document.getElementById('tbody')
 
 const btn = document.getElementById('btn');
 
-let todos = [];
+const todos = [];
 
 function showTasks() {
-    while (table.childNodes[1]) {
-        table.removeChild(table.childNodes[1]);
+    while (tbody.childNodes[0]) {
+        tbody.removeChild(tbody.childNodes[0]);
     }
 
     for (i = 0; i < todos.length; i++) {
-        const newRow = table.insertRow();
+        const newRow = tbody.insertRow();
         const index = i;
         let newCell = newRow.insertCell();
         let newText = document.createTextNode(index);
@@ -30,8 +30,8 @@ function showTasks() {
         const delbtn = document.createElement('input');
         delbtn.type = 'button';
         delbtn.value = '削除';
-        delbtn.classList.add('trash');
         newCell.appendChild(delbtn);
+        delbtn.addEventListener('click', { index: i, handleEvent: deleteTask }, false);
     }
 }
 
@@ -43,20 +43,16 @@ function addTask() {
     return todos;
 }
 
+
 function deleteTask() {
-    const delbtns = document.getElementsByClassName('trash');
-    for (i = 0; i < delbtns.length; i++) {
-        delbtns[i].addEventListener('click', () => {
-            todos.splice(i, 1);
-        });
-    }
-    return todos;
+    todos.splice(this.index, 1);
+    showTasks();
 }
+
 
 btn.addEventListener('click', () => {
     addTask();
     showTasks();
-    deleteTask();
 });
 
 
