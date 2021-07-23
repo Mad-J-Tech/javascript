@@ -25,6 +25,7 @@ function showTasks() {
         statbtn.type = 'button';
         statbtn.value = todos[i].status;
         newCell.appendChild(statbtn);
+        statbtn.addEventListener('click', { index: i, handleEvent: toggleTask }, false);
 
         newCell = newRow.insertCell();
         const delbtn = document.createElement('input');
@@ -41,6 +42,17 @@ function addTask() {
     let todo = { task: comment, status: "作業中" };
     todos.push(todo);
     return todos;
+}
+
+function toggleTask() {
+    let task = todos[this.index];
+
+    if (task["status"] == "作業中") {
+        task["status"] = "完了";
+    } else {
+        task["status"] = "作業中";
+    }
+    showTasks();
 }
 
 
