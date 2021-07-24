@@ -10,7 +10,6 @@ function checkOption() {
     const progress_tasks = document.querySelectorAll('.progress');
     const done_tasks = document.querySelectorAll('.done');
     const all_tasks = document.querySelectorAll('.progress, .done');
-    console.log(progress_tasks);
 
     if (option[0].checked) {
         all_tasks.forEach(element => {
