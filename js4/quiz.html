@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <title>Fetch API Quiz</title>
     <style>
-        #jst {
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        #result {
-            display: none;
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
         }
     </style>
 </head>
@@ -19,22 +17,27 @@
 <body>
 
     <section>
-        <h1>Fetch API Sample1</h1>
-
-        <div id="nowloading">
-            <h1>...取得中</h1>
+        <div id="welcome">
+            <h1>ようこそ！</h1>
+            <p>以下のボタンをクリック</p>
+            <input type="button" id="start_button" value="開始">
         </div>
 
-        <div id="question0"></div>
-        <div id="question1"></div>
-        <div id="question2"></div>
-        <div id="question3"></div>
-        <div id="question4"></div>
-        <div id="question5"></div>
-        <div id="question6"></div>
-        <div id="question7"></div>
-        <div id="question8"></div>
-        <div id="question9"></div>
+        <div id="nowloading" style="display: none;">
+            <h1>取得中...</h1>
+            <p>少々お待ち下さい</p>
+        </div>
+
+        <div id="question0" style="display: none;"></div>
+        <div id="question1" style="display: none;"></div>
+        <div id="question2" style="display: none;"></div>
+        <div id="question3" style="display: none;"></div>
+        <div id="question4" style="display: none;"></div>
+        <div id="question5" style="display: none;"></div>
+        <div id="question6" style="display: none;"></div>
+        <div id="question7" style="display: none;"></div>
+        <div id="question8" style="display: none;"></div>
+        <div id="question9" style="display: none;"></div>
         <div id="result"></div>
 
     </section>
