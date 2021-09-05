@@ -1,0 +1,123 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment: Television",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In the TV series &quot;Person of Interest&quot;, who plays the character &quot;Harold Finch&quot;?",
+            "correct_answer": "Michael Emerson",
+            "incorrect_answers": [
+                "Jim Caviezel",
+                "Taraji P. Henson",
+                "Kevin Chapman"
+            ]
+        },
+        {
+            "category": "Entertainment: Film",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "There aren&#039;t any live-action clones in &quot;Star Wars: Episode III - Revenge of the Sith&quot;.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "What was Ash Ketchum&#039;s second Pokemon?",
+            "correct_answer": "Caterpie",
+            "incorrect_answers": [
+                "Charmander",
+                "Pikachu",
+                "Pidgey"
+            ]
+        },
+        {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What type of genre is the controversial 2015 game &quot;Hatred&quot;?",
+            "correct_answer": "Shoot &#039;Em Up",
+            "incorrect_answers": [
+                "Point &amp; Click",
+                "MMORPG",
+                "Simulation"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Where does the book &quot;The Silence of the Lambs&quot; get its title from?",
+            "correct_answer": "The main character&#039;s trauma in childhood",
+            "incorrect_answers": [
+                "The relation it has with killing the innocents",
+                "The villain&#039;s favourite meal",
+                "The voice of innocent people being shut by the powerful"
+            ]
+        },
+        {
+            "category": "Politics",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who became Prime Minister of the United Kingdom in July 2016?",
+            "correct_answer": "Theresa May",
+            "incorrect_answers": [
+                "Boris Johnson",
+                "David Cameron",
+                "Tony Blair"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which player holds the NHL record of 2,857 points?",
+            "correct_answer": "Wayne Gretzky",
+            "incorrect_answers": [
+                "Mario Lemieux ",
+                "Sidney Crosby",
+                "Gordie Howe"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is the study of the cells and tissues of plants and animals?",
+            "correct_answer": "Histology",
+            "incorrect_answers": [
+                "Microbiology",
+                "Anatomy",
+                "Biochemistry"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "The fraudelent doctor John R. Brinkley acummulated great fame and wealth in the early 1900s offering what service?",
+            "correct_answer": "Goat testicles transplant",
+            "incorrect_answers": [
+                "Pig blood transfusion",
+                "Cow liver transplant",
+                "Turkey breast implants"
+            ]
+        },
+        {
+            "category": "Entertainment: Music",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What year did Dire Straits&#039;s Song &quot;Money for Nothing&quot; release?",
+            "correct_answer": "1985",
+            "incorrect_answers": [
+                "1973",
+                "1980",
+                "1991"
+            ]
+        }
+    ]
+}

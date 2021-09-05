@@ -1,3 +1,7 @@
+
+
+
+/*
 document.getElementById('start_button').addEventListener('click', () => {
 
     //ようこそ画面の非表示
@@ -126,3 +130,53 @@ document.getElementById('start_button').addEventListener('click', () => {
             console.error(error);
         })
 });
+*/
+
+const URL = "https://opentdb.com/api.php?amount=10";
+
+class Quiz {
+    constructor(quizData) {
+        this._quizzes = quizData.results;
+        this._correctAnswerNum = 0;
+    }
+    //Get API data elements
+    getQuizCategory(index) {
+        return this._quizzes[index - 1].category;
+    }
+
+    getQuizType(index) {
+        return this._quizzes[index - 1].type;
+    }
+
+    getQuizDifficulty(index) {
+        return this._quizzes[index - 1].difficulty;
+    }
+
+    getQuizQuestion(index) {
+        return this._quizzes[index - 1].question;
+    }
+
+    getQuizCorrectAnswer(index) {
+        return this._quizzes[index - 1].correct_answer;
+    }
+
+    getQuizIncorrectAnswer(index) {
+        return this._quizzes[index - 1].incorrect_answers;
+    }
+}
+
+
+const fetchQuizData = async (index) => {
+    try {
+        title.innerText = '取得中';
+        question.innerText = '少々お待ち下さい';
+
+        const response = await fetch(URL);
+        const quizData = await response.json();
+        const quiz = new Quiz(quizData);
+
+        setNextQuiz(quiz, index);
+    } catch (err) {
+        alert('APIの取得に失敗しました。');
+    }
+}
